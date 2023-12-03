@@ -13,8 +13,10 @@ Scorsa IoT Stack is an integrated suite of tools designed to streamline the setu
 1. Ensure Docker and Docker Compose are installed on your system.
 2. Clone this repository:
 
-git clone https://github.com/username/scorsa-iot-stack.git
-
+git clone:
+'''
+https://github.com/username/scorsa-iot-stack.git
+'''
 3. Navigate to the cloned directory:
 
 cd scorsa-iot-stack
