@@ -77,7 +77,9 @@ prompt_service_installation "Grafana" "grafana"
 
 if [ -n "$services" ]; then
     echo "Starting selected services: $services"
-    docker-compose up $services
+    docker-compose up -d $services
 else
     echo "No services selected for installation."
 fi
+
+exit 0
