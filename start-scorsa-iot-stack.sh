@@ -24,7 +24,8 @@ install_docker() {
         echo "Installing Docker..."
         curl -fsSL https://get.docker.com -o get-docker.sh
         sh get-docker.sh
-        sudo usermod -aG docker $USER
+        echo "Attempting to add user to the Docker group..."
+        sudo usermod -aG docker $USER || echo "Failed to add user to Docker group. You may need to run 'sudo usermod -aG docker \$USER' manually."
         echo "Docker installed successfully. Please log out and back in for the changes to take effect."
     else
         echo "Skipping Docker installation."
